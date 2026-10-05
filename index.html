@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="vi" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hồ Văn Danh | Junior .NET Backend Developer Portfolio</title>
+  <meta name="description" content="Portfolio của Hồ Văn Danh - Junior Backend Developer chuyên sâu C#, ASP.NET Core, Enterprise ERP, Kafka, SignalR, PostgreSQL & Clean Architecture." />
+  <meta name="keywords" content="Ho Van Danh, Backend Developer, Junior .NET, C#, ASP.NET Core, Kafka, SignalR, PostgreSQL, ERP" />
+  <meta name="author" content="Hồ Văn Danh" />
+
+  <!-- Open Graph / Meta sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Hồ Văn Danh - Junior .NET Backend Developer" />
+  <meta property="og:description" content="Khám phá các dự án Enterprise ERP, kiến trúc Clean Architecture, Kafka & SignalR được xây dựng bởi Hồ Văn Danh." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Animated Glow Elements -->
+  <div class="blob-bg blob-1"></div>
+  <div class="blob-bg blob-2"></div>
+  <div class="blob-bg blob-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-code">&lt;</span>HVD<span class="logo-accent">.NET</span><span class="logo-code">/&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link" data-i18n="nav_about"><i class="fa-solid fa-user-tie"></i> Giới thiệu</a>
+        <a href="#skills" class="nav-link" data-i18n="nav_skills"><i class="fa-solid fa-layer-group"></i> Kỹ năng</a>
+        <a href="#architecture" class="nav-link" data-i18n="nav_arch"><i class="fa-solid fa-diagram-project"></i> Kiến trúc Backend</a>
+        <a href="#experience" class="nav-link" data-i18n="nav_exp"><i class="fa-solid fa-briefcase"></i> Kinh nghiệm & Dự án</a>
+        <a href="#contact" class="nav-link" data-i18n="nav_contact"><i class="fa-solid fa-envelope"></i> Liên hệ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language Switcher Button -->
+        <button id="langToggle" class="btn-lang" title="Đổi ngôn ngữ / Change Language" aria-label="Toggle Language">
+          <i class="fa-solid fa-globe"></i>
+          <span id="langText">EN</span>
+        </button>
+
+        <!-- Dark/Light Theme Button -->
+        <button id="themeToggle" class="btn-icon" title="Đổi giao diện Sáng/Tối" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+
+        <!-- CV Button -->
+        <a href="Ho_Van_Danh_CV.pdf" target="_blank" class="btn btn-secondary btn-sm" title="Xem & Tải CV bản PDF">
+          <i class="fa-solid fa-file-pdf"></i>
+          <span data-i18n="btn_cv">Tải CV</span>
+        </a>
+
+        <!-- Contact CTA Button -->
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <span data-i18n="btn_hire">Tuyển dụng ngay</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Mobile Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span data-i18n="hero_status">Sẵn sàng cho thử thách mới • Full-time / Hybrid</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span data-i18n="hero_greeting">Xin chào, tôi là</span> <br />
+            <span class="gradient-text">HỒ VĂN DANH</span>
+          </h1>
+
+          <div class="role-badge-tag">
+            <i class="fa-brands fa-microsoft"></i>
+            <span>Junior .NET Backend Developer</span>
+          </div>
+
+          <p class="hero-subtitle" data-i18n="hero_desc">
+            Lập trình viên Backend tập trung vào hệ sinh thái <strong>C# / ASP.NET Core</strong> và kiến trúc phần mềm hướng dữ liệu. 
+            Có kinh nghiệm thực chiến phát triển các phân hệ <strong>Enterprise ERP</strong> quy mô lớn, xử lý sự kiện bất đồng bộ với 
+            <strong>Apache Kafka</strong>, đồng bộ dữ liệu thời gian thực qua <strong>SignalR</strong> và tối ưu hóa truy vấn phức tạp trên 
+            <strong>PostgreSQL & Apache AGE</strong>.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#experience" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i>
+              <span data-i18n="btn_view_projects">Xem dự án thực tế</span>
+            </a>
+            <a href="Ho_Van_Danh_CV.pdf" target="_blank" class="btn btn-secondary">
+              <i class="fa-solid fa-file-pdf"></i>
+              <span data-i18n="btn_download_cv">Tải CV PDF</span>
+            </a>
+            <a href="mailto:hovandannh@gmail.com" class="btn btn-outline">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span data-i18n="btn_send_email">Gửi Email trực tiếp</span>
+            </a>
+            <button class="btn btn-outline" id="copyEmailBtn" data-email="hovandannh@gmail.com" title="Sao chép địa chỉ email">
+              <i class="fa-regular fa-copy"></i>
+              <span>hovandannh@gmail.com</span>
+            </button>
+          </div>
+
+          <!-- Highlight Metric Badges -->
+          <div class="hero-stats">
+            <div class="stat-card spotlight-card">
+              <div class="stat-number">1.5+</div>
+              <div class="stat-label" data-i18n="stat_exp">Năm kinh nghiệm thực chiến</div>
+            </div>
+            <div class="stat-card spotlight-card">
+              <div class="stat-number">3+</div>
+              <div class="stat-label" data-i18n="stat_modules">Phân hệ Enterprise (ERP/GIS)</div>
+            </div>
+            <div class="stat-card spotlight-card">
+              <div class="stat-number">100%</div>
+              <div class="stat-label" data-i18n="stat_code">Tư duy Clean Code & SOLID</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Terminal / Code Showcase -->
+        <div class="hero-visual">
+          <div class="terminal-card spotlight-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-title">
+                <i class="fa-solid fa-code"></i> ProjectDisbursementService.cs
+              </div>
+              <button class="terminal-copy-btn" id="terminalCopyBtn" title="Sao chép đoạn mã C#">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+            <div class="terminal-body">
+              <pre><code id="terminalCode"><span class="c-keyword">public class</span> <span class="c-type">DisbursementService</span> : <span class="c-type">IDisbursementService</span>
+{
+    <span class="c-keyword">private readonly</span> <span class="c-type">IApplicationDbContext</span> _context;
+    <span class="c-keyword">private readonly</span> <span class="c-type">IKafkaProducer</span> _kafkaProducer;
+    <span class="c-keyword">private readonly</span> <span class="c-type">IHubContext</span>&lt;<span class="c-type">NotificationHub</span>&gt; _hubContext;
+
+    <span class="c-keyword">public async</span> <span class="c-type">Task</span>&lt;<span class="c-type">Result</span>&gt; <span class="c-func">ApproveDisbursementAsync</span>(
+        <span class="c-type">Guid</span> projectId, <span class="c-type">DisbursementDto</span> dto)
+    {
+        <span class="c-comment">// 1. Khởi tạo giao dịch & cập nhật kế hoạch vốn</span>
+        <span class="c-keyword">await using var</span> tx = <span class="c-keyword">await</span> _context.Database.<span class="c-func">BeginTransactionAsync</span>();
+        
+        <span class="c-comment">// 2. Phát sinh sự kiện bất đồng bộ qua Kafka broker</span>
+        <span class="c-keyword">await</span> _kafkaProducer.<span class="c-func">PublishAsync</span>(
+            <span class="c-string">"erp.disbursement.approved"</span>, 
+            <span class="c-keyword">new</span> { ProjectId = projectId, Amount = dto.Amount });
+
+        <span class="c-comment">// 3. Đẩy thông báo tức thời qua WebSocket SignalR</span>
+        <span class="c-keyword">await</span> _hubContext.Clients.<span class="c-func">Group</span>(projectId.<span class="c-func">ToString</span>())
+            .<span class="c-func">SendAsync</span>(<span class="c-string">"ReceiveProgressUpdate"</span>, dto);
+
+        <span class="c-keyword">await</span> tx.<span class="c-func">CommitAsync</span>();
+        <span class="c-keyword">return</span> <span class="c-type">Result</span>.<span class="c-func">Success</span>();
+    }
+}</code></pre>
+            </div>
+            <div class="terminal-footer">
+              <span class="tag"><i class="fa-solid fa-bolt"></i> Event-Driven (Kafka)</span>
+              <span class="tag"><i class="fa-solid fa-shield-halved"></i> Transactional</span>
+              <span class="tag"><i class="fa-solid fa-arrows-rotate"></i> Real-time (SignalR)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="tag_about">Tư Duy & Triết Lý</span>
+          <h2 class="section-title" data-i18n="title_about">Nền Tảng Kỹ Thuật Cốt Lõi</h2>
+          <p class="section-desc" data-i18n="desc_about">
+            Không chỉ dừng lại ở các thao tác CRUD thông thường, tôi chú trọng xây dựng các giải pháp có kiến trúc rõ ràng, khả năng mở rộng tốt và giải quyết trọn vẹn nghiệp vụ doanh nghiệp.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card spotlight-card highlight">
+            <div class="card-icon"><i class="fa-solid fa-diagram-project"></i></div>
+            <h3 data-i18n="card_title_1">Nghiệp Vụ Doanh Nghiệp Phức Tạp</h3>
+            <p data-i18n="card_desc_1">
+              Trực tiếp thiết kế và hiện thực các module: Quản lý dự án thi công xây dựng, kế hoạch vốn & theo dõi giải ngân, quản lý hồ sơ thầu, sản lượng hợp đồng, quản trị nhân sự và ma trận phân quyền RBAC.
+            </p>
+          </div>
+
+          <div class="about-card spotlight-card">
+            <div class="card-icon"><i class="fa-solid fa-cubes"></i></div>
+            <h3 data-i18n="card_title_2">Kiến Trúc Clean Architecture & SOLID</h3>
+            <p data-i18n="card_desc_2">
+              Phân tách rõ ràng các tầng Domain, Application, Infrastructure và Presentation. Áp dụng nhất quán Repository/Service Pattern, DTO Mapping và Dependency Injection giúp mã nguồn dễ đọc, dễ bảo trì và mở rộng.
+            </p>
+          </div>
+
+          <div class="about-card spotlight-card">
+            <div class="card-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <h3 data-i18n="card_title_3">Hệ Thống Event-Driven & Real-time</h3>
+            <p data-i18n="card_desc_3">
+              Tách rời dịch vụ (Decoupling) bằng <strong>Apache Kafka</strong> để xử lý luồng bất đồng bộ, kết hợp <strong>SignalR Hubs</strong> để truyền tải các luồng thảo luận, cập nhật tiến độ công trình và cảnh báo tức thời.
+            </p>
+          </div>
+
+          <div class="about-card spotlight-card">
+            <div class="card-icon"><i class="fa-solid fa-database"></i></div>
+            <h3 data-i18n="card_title_4">Tối Ưu Dữ Liệu & Graph Queries</h3>
+            <p data-i18n="card_desc_4">
+              Thành thạo <strong>PostgreSQL</strong> & <strong>SQL Server</strong> (Stored Procedures, Indexing). Ứng dụng <strong>Apache AGE</strong> để giải quyết bài toán truy vấn cây phân cấp thư mục tệp tin WebGIS và tăng tốc bằng <strong>Redis</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="tag_skills">Tech Stack</span>
+          <h2 class="section-title" data-i18n="title_skills">Kỹ Năng & Công Nghệ Thực Chiến</h2>
+          <p class="section-desc" data-i18n="desc_skills">Bộ công cụ đã được tôi trực tiếp sử dụng để xây dựng các sản phẩm thực tế</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="skill-filters">
+          <button class="filter-btn active" data-filter="all" data-i18n="filter_all">Tất cả</button>
+          <button class="filter-btn" data-filter="backend" data-i18n="filter_backend">Backend & .NET</button>
+          <button class="filter-btn" data-filter="database" data-i18n="filter_db">Dữ liệu & Caching</button>
+          <button class="filter-btn" data-filter="realtime" data-i18n="filter_realtime">Event & Real-time</button>
+          <button class="filter-btn" data-filter="architecture" data-i18n="filter_arch">Kiến trúc & Design</button>
+          <button class="filter-btn" data-filter="tools" data-i18n="filter_tools">DevOps & Công cụ</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid" id="skillsContainer">
+          <!-- Backend -->
+          <div class="skill-card spotlight-card" data-category="backend">
+            <div class="skill-header">
+              <i class="fa-brands fa-microsoft skill-icon"></i>
+              <div>
+                <h4>C# / .NET Core</h4>
+                <span data-i18n="sk_sub_1">Ngôn ngữ chính & Nền tảng</span>
+              </div>
+            </div>
+            <p data-i18n="sk_desc_1">ASP.NET Core Web API, ASP.NET MVC, Async/Await, LINQ, Dependency Injection, Middleware, Model Validation.</p>
+            <div class="skill-tags">
+              <span>C# 10+</span>
+              <span>.NET 8</span>
+              <span>RESTful API</span>
+            </div>
+          </div>
+
+          <div class="skill-card spotlight-card" data-category="backend">
+            <div class="skill-header">
+              <i class="fa-solid fa-gears skill-icon"></i>
+              <div>
+                <h4>ASP.NET Core Web API</h4>
+                <span data-i18n="sk_sub_2">RESTful Services</span>
+              </div>
+            </div>
+            <p data-i18n="sk_desc_2">Thiết kế API chuẩn RESTful, xử lý pipeline, custom exception middleware, lọc động theo chuyên đề.</p>
+            <div class="skill-tags">
+              <span>Swagger</span>
+              <span>DTO Mapping</span>
+              <span>FluentValidation</span>
+            </div>
+          </div>
+
+          <!-- Database -->
+          <div class="skill-card spotlight-card" data-category="database">
+            <div class="skill-header">
+              <i class="fa-solid fa-server skill-icon"></i>
+              <div>
+                <h4>PostgreSQL & SQL Server</h4>
+                <span data-i18n="sk_sub_3">RDBMS & Tối ưu hóa</span>
+              </div>
+            </div>
+            <p data-i18n="sk_desc_3">Thiết kế lược đồ quan hệ, Stored Procedures báo cáo tồn kho/doanh số, indexing và tối ưu truy vấn dữ liệu lớn.</p>
+            <div class="skill-tags">
+              <span>PostgreSQL</span>
+              <span>SQL Server</span>
+              <span>Stored Procedures</span>
+            </div>
+          </div>
+
+          <div class="skill-card spotlight-card" data-category="database">
+            <div class="skill-header">
+              <i class="fa-solid fa-database skill-icon"></i>
+              <div>
+                <h4>Entity Framework Core</h4>
+                <span data-i18n="sk_sub_4">ORM & LINQ Queries</span>
+              </div>
+            </div>
+            <p data-i18n="sk_desc_4">Code-First migrations, tracking vs no-tracking, eager loading, LINQ tối ưu tránh N+1 query, transactions.</p>
+            <div class="skill-tags">
+              <span>EF Core</span>
+              <span>LINQ Optimization</span>
+              <span>Transactions</span>
+            </div>
+          </div>
+
+          <div class="skill-card spotlight-card" data-category="database">
+            <div class="skill-header">
+              <i class="fa-solid fa-diagram-project skill-icon"></i>
+              <div>
+                <h4>Apache AGE (Graph DB)</h4>
+                <span data-i18n="sk_sub_5">Truy vấn đồ thị & Cây phân cấp</span>
+              </div>
+            </div>
+            <p data-i18n="sk_desc_5">Tích hợp trên PostgreSQL để truy vấn cây phân cấp thư mục tệp tin WebGIS và các quan hệ cha-con đa cấp phức tạp.</p>
+            <div class="skill-tags">
+              <span>Graph Queries</span>
+              <span>Cypher</span>
+              <span>Hierarchical Trees</span>
+            </div>
+          </div>
+
+          <div class="skill-card spotlight-card" data-category="database">
+            <div class="skill-header">
+              <i class="fa-solid fa-memory skill-icon"></i>
+              <div>
+                <h4>Redis Caching</h4>
+                <span data-i18n="sk_sub_6">Tăng tốc truy xuất dữ liệu</span>
+              </div>
+            </div>
+            <p data-i18n="sk_desc_6">Áp dụng cơ chế Cache-Aside cho dữ liệu tra cứu lặp lại, giảm tải database và hạ độ trễ phản hồi API.</p>
+            <div class="skill-tags">
+              <span>Key-Value</span>
+              <span>Cache Aside</span>
+              <span>In-memory</span>
+            </div>
+          </div>
+
+          <!-- Realtime & Messaging -->
+          <div class="skill-card spotlight-card" data-category="realtime">
+            <div class="skill-header">
+              <i class="fa-solid fa-arrows-split-up-and-left skill-icon"></i>
+              <div>
+                <h4>Apache Kafka</h4>
+                <span data-i18n="sk_sub_7">Event-Driven Architecture</span>
+              </div>
+            </div>
+            <p data-i18n="sk_desc_7">Áp dụng Message Broker xử lý luồng giao tiếp dịch vụ bất đồng bộ, decoupling các module ERP và đảm bảo tin cậy dữ liệu.</p>
+            <div class="skill-tags">
+              <span>Producer/Consumer</span>
+              <span>Topic/Partition</span>
+              <span>Async Workflows</span>
+            </div>
+          </div>
+
+          <div class="skill-card spotlight-card" data-category="realtime">
+            <div class="skill-header">
+              <i class="fa-solid fa-satellite-dish skill-icon"></i>
+              <div>
+                <h4>SignalR</h4>
+                <span data-i18n="sk_sub_8">Truyền thông Real-time</span>
+              </div>
+            </div>
+            <p data-i18n="sk_desc_8">Triển khai SignalR Hubs cho cập nhật luồng thảo luận dự án, thông báo giải ngân tức thì và tiến độ công việc đa người dùng.</p>
+            <div class="skill-tags">
+              <span>WebSockets</span>
+              <span>Real-time Hubs</span>
+              <span>Push Notifications</span>
+            </div>
+          </div>
+
+          <!-- Architecture -->
+          <div class="skill-card spotlight-card" data-category="architecture">
+            <div class="skill-header">
+              <i class="fa-solid fa-layer-group skill-icon"></i>
+              <div>
+                <h4>Clean Architecture & SOLID</h4>
+                <span data-i18n="sk_sub_9">Nguyên lý & Mẫu thiết kế</span>
+              </div>
+            </div>
+            <p data-i18n="sk_desc_9">Phân lớp rõ ràng, tuân thủ nguyên lý SOLID, Repository/Service Pattern, Clean Code, dễ dàng mở rộng và bàn giao mã nguồn.</p>
+            <div class="skill-tags">
+              <span>SOLID</span>
+              <span>Clean Code</span>
+              <span>Repository/Service</span>
+            </div>
+          </div>
+
+          <div class="skill-card spotlight-card" data-category="architecture">
+            <div class="skill-header">
+              <i class="fa-solid fa-id-card-clip skill-icon"></i>
+              <div>
+                <h4>RBAC & Security</h4>
+                <span data-i18n="sk_sub_10">Phân quyền & Bảo mật</span>
+              </div>
+            </div>
+            <p data-i18n="sk_desc_10">Thiết kế phân quyền phòng ban, người dùng, vai trò (Roles) và quyền hạn chi tiết (Permissions) cho hệ thống ERP doanh nghiệp.</p>
+            <div class="skill-tags">
+              <span>Role-Based Access</span>
+              <span>Claims-Based</span>
+              <span>JWT</span>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-card spotlight-card" data-category="tools">
+            <div class="skill-header">
+              <i class="fa-brands fa-docker skill-icon"></i>
+              <div>
+                <h4>Docker & Amazon S3</h4>
+                <span data-i18n="sk_sub_11">Đóng gói & Lưu trữ</span>
+              </div>
+            </div>
+            <p data-i18n="sk_desc_11">Đóng gói ứng dụng chạy môi trường đồng nhất; tích hợp lưu trữ hồ sơ, bản vẽ và tài liệu hợp đồng lên Cloud S3.</p>
+            <div class="skill-tags">
+              <span>Containers</span>
+              <span>Amazon S3</span>
+              <span>File Storage</span>
+            </div>
+          </div>
+
+          <div class="skill-card spotlight-card" data-category="tools">
+            <div class="skill-header">
+              <i class="fa-brands fa-git-alt skill-icon"></i>
+              <div>
+                <h4>Git & Postman</h4>
+                <span data-i18n="sk_sub_12">Quy trình chuyên nghiệp</span>
+              </div>
+            </div>
+            <p data-i18n="sk_desc_12">Quản lý phiên bản Git/GitHub theo nhánh tính năng, viết tài liệu kiểm thử API chi tiết qua Postman, Firebase basics.</p>
+            <div class="skill-tags">
+              <span>Git Flow</span>
+              <span>Postman Test</span>
+              <span>GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BACKEND ARCHITECTURE SHOWCASE -->
+    <section class="section arch-section" id="architecture">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="tag_arch">Sơ Đồ Luồng</span>
+          <h2 class="section-title" data-i18n="title_arch">Mô Hình Kiến Trúc Hệ Thống Backend</h2>
+          <p class="section-desc" data-i18n="desc_arch">Nhấp vào từng thành phần để xem chi tiết cách tôi tổ chức và tối ưu luồng dữ liệu</p>
+        </div>
+
+        <div class="arch-container spotlight-card">
+          <div class="arch-diagram">
+            <div class="arch-node client-node spotlight-card" data-target="info-client">
+              <div class="node-icon"><i class="fa-solid fa-desktop"></i></div>
+              <div class="node-title">Client Layer</div>
+              <div class="node-sub" data-i18n="arch_client_sub">Web Dashboard / GIS UI</div>
+            </div>
+
+            <div class="arch-arrow"><i class="fa-solid fa-arrow-right"></i> <span>REST & WSS</span></div>
+
+            <div class="arch-node api-node spotlight-card" data-target="info-api">
+              <div class="node-icon"><i class="fa-solid fa-server"></i></div>
+              <div class="node-title">ASP.NET Core API</div>
+              <div class="node-sub" data-i18n="arch_api_sub">Clean Architecture Core</div>
+            </div>
+
+            <div class="arch-arrow"><i class="fa-solid fa-arrow-right"></i> <span>Async & Event</span></div>
+
+            <div class="arch-node bus-node spotlight-card" data-target="info-bus">
+              <div class="node-icon"><i class="fa-solid fa-arrows-split-up-and-left"></i></div>
+              <div class="node-title">Kafka & SignalR</div>
+              <div class="node-sub" data-i18n="arch_bus_sub">Event Bus & Real-time Hub</div>
+            </div>
+
+            <div class="arch-arrow"><i class="fa-solid fa-arrow-right"></i> <span>Storage</span></div>
+
+            <div class="arch-node db-node spotlight-card" data-target="info-db">
+              <div class="node-icon"><i class="fa-solid fa-database"></i></div>
+              <div class="node-title">Data & Storage</div>
+              <div class="node-sub" data-i18n="arch_db_sub">Postgres, AGE, Redis, S3</div>
+            </div>
+          </div>
+
+          <!-- Dynamic Details Card -->
+          <div class="arch-detail-card" id="archDetailBox">
+            <div class="detail-header">
+              <span class="detail-badge" id="archDetailBadge">Tầng Xử Lý Chính</span>
+              <h3 id="archDetailTitle">ASP.NET Core Web API (Clean Architecture)</h3>
+            </div>
+            <p id="archDetailDesc">
+              Thiết kế theo cấu trúc tách lớp nghiêm ngặt: Domain logic được cô lập độc lập, Application xử lý các luồng Use Case bằng DTO & Validation, Infrastructure đảm nhiệm kết nối EF Core, Kafka và dịch vụ bên thứ ba. Nhờ đó mã nguồn dễ dàng viết Unit Test và bảo trì lâu dài.
+            </p>
+            <div class="detail-features" id="archDetailFeatures">
+              <span><i class="fa-solid fa-check"></i> Dependency Injection chuẩn mực</span>
+              <span><i class="fa-solid fa-check"></i> Xử lý Exception tập trung qua Middleware</span>
+              <span><i class="fa-solid fa-check"></i> Async/Await không nghẽn ThreadPool</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK EXPERIENCE & PROJECTS SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="tag_exp">Hành Trình Nghề Nghiệp</span>
+          <h2 class="section-title" data-i18n="title_exp">Kinh Nghiệm & Dự Án Doanh Nghiệp</h2>
+          <p class="section-desc" data-i18n="desc_exp">Các bài toán nghiệp vụ quy mô thực tế tôi đã trực tiếp tham gia xây dựng</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1: DP UNITY - ERP -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content spotlight-card">
+              <div class="exp-badge-row">
+                <span class="company-badge">DP UNITY</span>
+                <span class="role-badge">Fresher / Junior .NET Developer</span>
+                <span class="time-badge"><i class="fa-regular fa-calendar"></i> 10/2025 - Hiện tại</span>
+              </div>
+              <h3 class="exp-title" data-i18n="exp_title_1">Enterprise ERP — Phân Hệ Quản Lý Dự Án Xây Dựng & Nhân Sự (HR)</h3>
+              <p class="exp-summary" data-i18n="exp_sum_1">
+                Hệ thống ERP giải quyết trọn vẹn vòng đời dự án thi công xây dựng: từ kế hoạch vốn, giải ngân, quản lý hồ sơ thầu, nghiệm thu sản lượng hợp đồng đến phân quyền nhân sự đa tầng.
+              </p>
+
+              <div class="exp-highlights">
+                <h4><i class="fa-solid fa-list-check"></i> <span data-i18n="exp_duty_title">Trách nhiệm & Nghiệp vụ đã xây dựng:</span></h4>
+                <ul>
+                  <li data-i18n="exp1_li1"><strong>Quản lý dự án thi công:</strong> Xây dựng API hồ sơ dự án, trạng thái thi công, báo cáo nhật trình, vấn đề phát sinh tại công trường và bộ lọc đa tiêu chí theo chuyên đề chuyên sâu.</li>
+                  <li data-i18n="exp1_li2"><strong>Theo dõi giải ngân & Kế hoạch vốn:</strong> Xây dựng luồng API theo dõi kế hoạch phân bổ vốn, thống kê giải ngân theo từng giai đoạn và xuất báo cáo quản trị cấp cao.</li>
+                  <li data-i18n="exp1_li3"><strong>Luồng hồ sơ & Văn bản dự án:</strong> Xử lý văn bản đi/đến, hồ sơ pháp lý công trình, tài liệu mời thầu, hợp đồng và bảo lãnh ngân hàng.</li>
+                  <li data-i18n="exp1_li4"><strong>Sản lượng & Tiến độ lũy kế:</strong> Tính toán sản lượng công việc theo hợp đồng, hỗ trợ theo dõi tiến độ thi công thực tế so với cam kết hợp đồng.</li>
+                  <li data-i18n="exp1_li5"><strong>Quản trị nhân sự & Phân quyền RBAC:</strong> Quản lý cơ cấu phòng ban, danh sách nhân sự, phân vai trò (Roles) và ma trận quyền hạn (Permissions) chặt chẽ.</li>
+                  <li data-i18n="exp1_li6"><strong>Real-time & Message Queue:</strong> Tích hợp <strong>Apache Kafka</strong> để đồng bộ sự kiện giữa các module và <strong>SignalR</strong> cho thông báo đẩy/thảo luận trực tiếp trong từng dự án.</li>
+                </ul>
+              </div>
+
+              <div class="exp-tech-stack">
+                <span class="tech-pill">ASP.NET Core</span>
+                <span class="tech-pill">Entity Framework Core</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">Redis</span>
+                <span class="tech-pill">Apache Kafka</span>
+                <span class="tech-pill">SignalR</span>
+                <span class="tech-pill">Docker</span>
+                <span class="tech-pill">Amazon S3</span>
+                <span class="tech-pill">Clean Architecture</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: DP UNITY - WebGIS -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content spotlight-card">
+              <div class="exp-badge-row">
+                <span class="company-badge">DP UNITY</span>
+                <span class="role-badge">Backend Developer (.NET)</span>
+                <span class="time-badge"><i class="fa-regular fa-calendar"></i> 06/2025 - 09/2025</span>
+              </div>
+              <h3 class="exp-title" data-i18n="exp_title_2">WebGIS Solution — Hệ Thống Quản Lý Cây Tệp Tin Phân Cấp (Hierarchical Files)</h3>
+              <p class="exp-summary" data-i18n="exp_sum_2">
+                Giải pháp API quản lý hệ thống tệp tin và lớp dữ liệu bản đồ địa lý theo mô hình cây thư mục phân cấp sâu cho dự án WebGIS.
+              </p>
+
+              <div class="exp-highlights">
+                <h4><i class="fa-solid fa-list-check"></i> <span data-i18n="exp_tech_title">Trách nhiệm & Điểm nhấn kỹ thuật:</span></h4>
+                <ul>
+                  <li data-i18n="exp2_li1">Xây dựng toàn bộ hệ thống Backend API quản lý tệp tin, lớp bản đồ và dữ liệu địa không gian có cấu trúc cha-con phức tạp.</li>
+                  <li data-i18n="exp2_li2">Ứng dụng <strong>Apache AGE</strong> (Graph Extension) kết hợp <strong>PostgreSQL</strong> để thực hiện các truy vấn đệ quy cây thư mục (hierarchical tree queries) cực kỳ nhanh chóng so với SQL truyền thống.</li>
+                  <li data-i18n="exp2_li3">Kết hợp bộ nhớ đệm <strong>Redis Caching</strong> và <strong>EF Core</strong> để giảm thiểu tối đa độ trễ phản hồi khi duyệt các cây thư mục dung lượng lớn.</li>
+                </ul>
+              </div>
+
+              <div class="exp-tech-stack">
+                <span class="tech-pill">ASP.NET Core</span>
+                <span class="tech-pill">Entity Framework Core</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">Apache AGE (Graph DB)</span>
+                <span class="tech-pill">Redis</span>
+                <span class="tech-pill">RESTful APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: VM STYLE - ERP -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content spotlight-card">
+              <div class="exp-badge-row">
+                <span class="company-badge">VM STYLE</span>
+                <span class="role-badge">Backend Developer Intern</span>
+                <span class="time-badge"><i class="fa-regular fa-calendar"></i> 04/2024 - 08/2024</span>
+              </div>
+              <h3 class="exp-title" data-i18n="exp_title_3">Internal Enterprise Resource Planning (ERP) System</h3>
+              <p class="exp-summary" data-i18n="exp_sum_3">
+                Phát triển và tối ưu hóa hệ thống ERP nội bộ quản lý chuỗi cung ứng, kho vận và thống kê kinh doanh thời trang bán lẻ.
+              </p>
+
+              <div class="exp-highlights">
+                <h4><i class="fa-solid fa-list-check"></i> <span data-i18n="exp_result_title">Trách nhiệm & Kết quả:</span></h4>
+                <ul>
+                  <li data-i18n="exp3_li1">Tham gia đội ngũ Backend phát triển và duy trì các module lõi của hệ thống ERP sử dụng C# và ASP.NET Core.</li>
+                  <li data-i18n="exp3_li2">Thiết kế và tối ưu các <strong>SQL Server Stored Procedures</strong> phức tạp phục vụ thống kê xuất nhập tồn kho và báo cáo doanh số bán hàng đa chi nhánh.</li>
+                  <li data-i18n="exp3_li3">Xây dựng và tích hợp RESTful APIs kết nối dữ liệu giữa Web Dashboard và cơ sở dữ liệu nền.</li>
+                  <li data-i18n="exp3_li4">Tái cấu trúc (Refactor) các đoạn mã nguồn cũ theo chuẩn Clean Code, củng cố vững chắc tư duy OOP, SOLID và bất đồng bộ (async/await).</li>
+                </ul>
+              </div>
+
+              <div class="exp-tech-stack">
+                <span class="tech-pill">ASP.NET MVC</span>
+                <span class="tech-pill">ASP.NET Core Web API</span>
+                <span class="tech-pill">Entity Framework Core</span>
+                <span class="tech-pill">MS SQL Server</span>
+                <span class="tech-pill">Stored Procedures</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Education -->
+          <div class="timeline-item">
+            <div class="timeline-dot education"></div>
+            <div class="timeline-content spotlight-card">
+              <div class="exp-badge-row">
+                <span class="company-badge education" data-i18n="edu_school">TRƯỜNG CAO ĐẲNG KỸ THUẬT CAO THẮNG</span>
+                <span class="role-badge">Associate Degree in Information Technology</span>
+                <span class="time-badge"><i class="fa-regular fa-calendar"></i> 2021 - 2024</span>
+              </div>
+              <h3 class="exp-title" data-i18n="edu_major">Chuyên Ngành: Công Nghệ Thông Tin</h3>
+              <p class="exp-summary" data-i18n="edu_desc">
+                Được đào tạo bài bản về cấu trúc dữ liệu và giải thuật, lập trình hướng đối tượng (OOP), cơ sở dữ liệu quan hệ, mạng máy tính và phát triển phần mềm ứng dụng doanh nghiệp.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW CONTACT & DEVELOPER CARD SECTION (Tinh gọn, hiện đại, chuẩn Junior Dev) -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card-modern spotlight-card">
+          <div class="contact-top">
+            <span class="section-tag" data-i18n="tag_contact">Kết Nối Trực Tiếp</span>
+            <h2 class="contact-main-title" data-i18n="contact_heading">Trao Đổi Cơ Hội Hợp Tác Kỹ Thuật</h2>
+            <p class="contact-lead-text" data-i18n="contact_lead">
+              Tôi đang tìm kiếm cơ hội làm việc chính thức (Full-time / Hybrid) ở vị trí <strong>Backend Developer (.NET)</strong> trong một đội ngũ coi trọng chất lượng mã nguồn, nơi tôi có thể đóng góp năng lực xử lý nghiệp vụ thực chiến và không ngừng học hỏi từ các kỹ sư giàu kinh nghiệm.
+            </p>
+          </div>
+
+          <div class="dev-contact-grid">
+            <!-- Email Box -->
+            <div class="dev-info-box spotlight-card">
+              <div class="dev-box-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="dev-box-details">
+                <span class="dev-box-label" data-i18n="label_email">Email Làm Việc</span>
+                <a href="mailto:hovandannh@gmail.com" class="dev-box-val">hovandannh@gmail.com</a>
+              </div>
+              <button class="copy-small-btn" data-copy="hovandannh@gmail.com" title="Sao chép Email">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <!-- Phone Box -->
+            <div class="dev-info-box spotlight-card">
+              <div class="dev-box-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="dev-box-details">
+                <span class="dev-box-label" data-i18n="label_phone">Số Điện Thoại / Zalo</span>
+                <a href="tel:0978737826" class="dev-box-val">0978 737 826</a>
+              </div>
+              <button class="copy-small-btn" data-copy="0978737826" title="Sao chép SĐT">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <!-- Location Box -->
+            <div class="dev-info-box spotlight-card">
+              <div class="dev-box-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="dev-box-details">
+                <span class="dev-box-label" data-i18n="label_location">Địa Điểm</span>
+                <span class="dev-box-val" data-i18n="val_location">Gò Vấp, TP. Hồ Chí Minh</span>
+              </div>
+            </div>
+
+            <!-- Working Mode Box -->
+            <div class="dev-info-box spotlight-card">
+              <div class="dev-box-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <div class="dev-box-details">
+                <span class="dev-box-label" data-i18n="label_status">Trạng Thái Tuyển Dụng</span>
+                <span class="dev-box-val status-green" data-i18n="val_status">🟢 Có thể đi làm ngay</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Action Strip -->
+          <div class="contact-actions-strip">
+            <a href="mailto:hovandannh@gmail.com?subject=[Tuyển%20Dụng%20.NET%20Backend]%20Trao%20đổi%20cơ%20hội%20việc%20làm&body=Chào%20Danh,%20chúng%20tôi%20muốn%20trao%20đổi%20với%20bạn%20về%20vị%20trí%20.NET%20Developer..." class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span data-i18n="btn_email_now">Mở ứng dụng gửi Email ngay</span>
+            </a>
+
+            <a href="Ho_Van_Danh_CV.pdf" target="_blank" class="btn btn-secondary btn-lg">
+              <i class="fa-solid fa-file-pdf"></i>
+              <span data-i18n="btn_view_cv">Xem & Tải CV bản mới nhất</span>
+            </a>
+
+            <div class="contact-social-icons">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-code">&lt;</span>HVD<span class="logo-accent">.NET</span><span class="logo-code">/&gt;</span>
+        </a>
+        <p data-i18n="footer_copy">© 2026 Hồ Văn Danh. Thiết kế hiện đại tối ưu cho GitHub Pages.</p>
+      </div>
+      <div class="footer-right">
+        <p><span data-i18n="footer_built">Xây dựng bằng</span> <span class="heart-text">❤</span>, Clean Code & Modern Web Standards</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMsg">Đã sao chép vào bộ nhớ tạm!</span>
+  </div>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
